@@ -4,6 +4,8 @@ Two UI styles, packaged so **you or your agent** can drop them into anything: a 
 classes, no JS, no build), design tokens, a Tailwind preset, and a `SKILL.md` that teaches an agent the
 rules of the style.
 
+![Pop UI and Sketch UI side by side](docs/screenshots/overview.png)
+
 | | **Pop UI** | **Sketch UI** + Main Street kit |
 |---|---|---|
 | Look | Neo-brutalist pop: ink outlines, hard offset shadows, hot orange + pastels, Bricolage Grotesque | Hand-drawn storybook: wobbly inked boxes on warm paper, tilted cards, Caveat lettering, muted gouache, shopfront awnings, bunting, marquees |
@@ -11,6 +13,26 @@ rules of the style.
 | Good for | Tools, editors, dashboards, landing pages | Games and HUDs, storytelling sites, cosy shops, portfolios |
 | Classes | `pop-*` on `<body class="pop">` | `sk-*` on `<body class="sketch">` |
 | Gallery | [`demos/pop.html`](demos/pop.html) | [`demos/sketch.html`](demos/sketch.html) |
+
+## Screenshots
+
+### Pop UI
+From the crochet and pptgpt sites. Full gallery in [`demos/pop.html`](demos/pop.html).
+
+![Pop UI component gallery](docs/screenshots/pop-gallery.png)
+
+Dark mode (`data-theme="dark"`):
+
+![Pop UI in dark mode](docs/screenshots/pop-dark.png)
+
+### Sketch UI
+From art-heist. Full gallery in [`demos/sketch.html`](demos/sketch.html).
+
+![Sketch UI component gallery](docs/screenshots/sketch-gallery.png)
+
+The Main Street kit: awnings, shop signs, blade signs, shop window, street sign:
+
+![Sketch UI Main Street kit](docs/screenshots/sketch-main-street.png)
 
 ## Use it in a page
 
