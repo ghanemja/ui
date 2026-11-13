@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ghanemja/ui</title>
+<link rel="stylesheet" href="skills/pop-ui/pop.css">
+<link rel="stylesheet" href="skills/sketch-ui/sketch.css">
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; }
+  @media (max-width: 760px) { body { grid-template-columns: 1fr; } }
+  .half { padding: clamp(28px, 6vw, 72px) clamp(16px, 5vw, 56px); display: flex; flex-direction: column; gap: 20px; justify-content: center; }
+</style>
+</head>
+<body>
+  <section class="half pop">
+    <span class="pop-eyebrow">Style 01 · crochet, pptgpt</span>
+    <h1 class="pop-display">Pop <mark>UI</mark></h1>
+    <p class="pop-lede">Ink outlines, hard shadows, one hot accent and a box of pastels. For tools people make things with.</p>
+    <div class="pop-row"><span class="pop-pill">pop-btn</span><span class="pop-pill" style="--st:#FFD86B">pop-card</span><span class="pop-pill" style="--st:#FF9BB0">pop-pill</span></div>
+    <div class="pop-row"><a class="pop-btn pop-btn--primary pop-btn--lg" href="demos/pop.html">Open the gallery</a><a class="pop-btn" href="skills/pop-ui/SKILL.md">SKILL.md</a></div>
+  </section>
+  <section class="half sketch sk-grain" style="position: relative">
+    <div class="sk-bunting" style="position: absolute; top: 0; left: 0; right: 0"></div>
+    <span class="sk-label">style 02 · art heist, main street</span>
+    <h1 class="sk-title" style="font-size: clamp(56px, 9vw, 104px)">Sketch <span>UI</span></h1>
+    <p style="font-size: 22px; margin: 0">Inked boxes on warm paper, hand-lettered, painted in gouache. Comes with a whole Main Street.</p>
+    <div class="sk-shop" data-shop="cafe" style="max-width: 300px"><div class="sk-awning"></div><div class="sk-shop__body"><span class="sk-sign sk-sign--gilt">Bean There</span></div></div>
+    <div class="sk-row"><a class="sk-btn sk-btn--gold sk-btn--big" href="demos/sketch.html">Open the gallery</a><a class="sk-btn" href="skills/sketch-ui/SKILL.md">SKILL.md</a></div>
+  </section>
+</body>
+</html>

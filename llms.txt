@@ -1,0 +1,9 @@
+# ghanemja/ui
+
+> Two CSS UI libraries with agent instructions. Plain classes, no JS, no build step.
+
+- Pop UI — neo-brutalist pop (ink outlines, hard offset shadows, orange accent, pastels). Instructions: skills/pop-ui/SKILL.md · CSS: https://cdn.jsdelivr.net/gh/ghanemja/ui@main/skills/pop-ui/pop.css · tokens: skills/pop-ui/tokens.json
+- Sketch UI — hand-drawn storybook on warm paper + Main Street kit (awnings, signs, bunting, marquee, tickets). Instructions: skills/sketch-ui/SKILL.md · CSS: https://cdn.jsdelivr.net/gh/ghanemja/ui@main/skills/sketch-ui/sketch.css · tokens: skills/sketch-ui/tokens.json
+- Live galleries: demos/pop.html, demos/sketch.html
+
+Read the SKILL.md for the chosen style before writing markup: it lists every class and the rules that keep the style consistent.

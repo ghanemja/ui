@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sketch UI · component gallery</title>
+<link rel="stylesheet" href="../skills/sketch-ui/sketch.css">
+<style>
+  .demo-sec { margin-top: 56px; }
+  .demo-sec > .sk-label { display: block; margin-bottom: 18px; }
+  .swatch { display: grid; gap: 4px; font-size: 15px; text-align: center; }
+  .swatch i { display: block; height: 58px; background: var(--c); border: 2.5px solid var(--sk-ink); border-radius: var(--sk-sketch-3); box-shadow: var(--sk-sh-sm); }
+</style>
+</head>
+<body class="sketch sk-grain">
+<div class="sk-bunting" style="--flag: 30px"></div>
+<div class="sk-wrap" style="padding: 26px 0 90px">
+
+  <header style="text-align: center; padding: 30px 0 10px">
+    <h1 class="sk-title">The Vanishing <span>Gallery</span></h1>
+    <p class="sk-soft" style="font-size: 24px; margin: 14px 0 4px">a hand-drawn UI kit for storybook games &amp; sites</p>
+    <p class="sk-label">sketch ui · main street kit</p>
+    <div class="sk-row" style="justify-content: center; margin-top: 18px">
+      <button class="sk-btn sk-btn--big sk-btn--gold">Start the case</button>
+      <a class="sk-btn" href="pop.html">see Pop UI →</a>
+    </div>
+  </header>
+
+  <section class="demo-sec">
+    <h2>Paper &amp; paint</h2><span class="sk-label">tokens · --sk-*</span>
+    <div class="sk-grid" style="--min: 100px; --gap: 16px">
+      <div class="swatch"><i style="--c: var(--sk-paper)"></i>paper</div>
+      <div class="swatch"><i style="--c: var(--sk-cream)"></i>cream</div>
+      <div class="swatch"><i style="--c: var(--sk-ink)"></i>ink</div>
+      <div class="swatch"><i style="--c: var(--sk-accent)"></i>accent</div>
+      <div class="swatch"><i style="--c: var(--sk-gold)"></i>gold</div>
+      <div class="swatch"><i style="--c: var(--sk-rose)"></i>rose</div>
+      <div class="swatch"><i style="--c: var(--sk-sage)"></i>sage</div>
+      <div class="swatch"><i style="--c: var(--sk-teal)"></i>teal</div>
+      <div class="swatch"><i style="--c: var(--sk-dusty)"></i>dusty</div>
+      <div class="swatch"><i style="--c: var(--sk-lilac)"></i>lilac</div>
+      <div class="swatch"><i style="--c: var(--sk-terracotta)"></i>terracotta</div>
+      <div class="swatch"><i style="--c: var(--sk-forest)"></i>forest</div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Buttons &amp; bits</h2><span class="sk-label">sk-btn · sk-tab-btn · sk-kbd · sk-badge · sk-chip · sk-stamp</span>
+    <div class="sk-stack">
+      <div class="sk-row">
+        <button class="sk-btn sk-btn--gold">Look closer</button>
+        <button class="sk-btn">Ask about it</button>
+        <button class="sk-btn sk-btn--accent">Name the thief</button>
+        <button class="sk-btn sk-btn--cream">Not now</button>
+        <button class="sk-btn sk-btn--ghost">skip</button>
+        <button class="sk-btn sk-btn--sm">small</button>
+        <button class="sk-tab-btn" aria-label="Fold">–</button>
+      </div>
+      <div class="sk-row">
+        <button class="sk-btn">Notebook <span class="sk-badge">3</span></button>
+        <span>press <kbd class="sk-kbd">E</kbd> to look, <kbd class="sk-kbd">N</kbd> for notes</span>
+        <span class="sk-chip">museum</span><span class="sk-chip" style="--st:#F6D6DC">harbour</span><span class="sk-chip" style="--st:#D9E6C8">station</span>
+        <span class="sk-stamp">Case closed</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Cards, notes, scraps</h2><span class="sk-label">sk-card · sk-notebook · sk-scrap · sk-tape</span>
+    <div class="sk-grid">
+      <article class="sk-card">
+        <h3>A torn ticket</h3>
+        <p>Cargo slip, 11:40 freight. Someone wrote <span class="sk-mark">“FRAME &amp; CO.”</span> on the back.</p>
+        <p class="sk-note-text">Found at the harbour, under a crate.</p>
+        <button class="sk-btn sk-btn--sm" style="float: right">Keep it</button>
+      </article>
+      <article class="sk-card sk-card--lift">
+        <h3>Otto, the guard</h3>
+        <p>Says he never left his post. His thermos says otherwise.</p>
+        <div class="sk-row"><span class="sk-chip">alibi?</span><span class="sk-chip" style="--st:#FFF1C8">coffee</span></div>
+      </article>
+      <div class="sk-notebook">
+        <h3 style="line-height: 32px; margin: 0">Notebook</h3>
+        <ul class="sk-checklist">
+          <li class="done"><i>✓</i> Find Vivi</li>
+          <li class="on pick"><i>→</i> Question Otto, Pia, Rex <span class="ct">1/3</span></li>
+          <li class="pick"><i>·</i> Look around Main Street <span class="ct">2 finds</span></li>
+          <li><i>·</i> Name the thief</li>
+        </ul>
+      </div>
+    </div>
+    <div class="sk-row" style="margin-top: 30px; --gap: 28px">
+      <div class="sk-scrap sk-tape">remember: the van was <b>green</b></div>
+      <div class="sk-scrap" style="--tilt: -3deg; background: #F6D6DC">Pia → bakery at 9?</div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Talk</h2><span class="sk-label">sk-talk · sk-msg · sk-bubble · sk-shout · sk-prompt</span>
+    <div class="sk-grid" style="--min: 320px">
+      <div class="sk-talk">
+        <span class="sk-avatar">P</span>
+        <div style="flex: 1">
+          <b class="sk-talk__who">Pia</b>
+          <p>I saw a van by the back door. Green, I think. Or teal? It was early.</p>
+          <div class="sk-talk__answers"><button class="sk-btn sk-btn--sm">What time?</button><button class="sk-btn sk-btn--sm sk-btn--gold">Thanks, Pia</button></div>
+        </div>
+      </div>
+      <div class="sk" style="padding: 14px 16px 16px; transform: rotate(1.4deg)">
+        <div class="sk-soft" style="font-size: 16px; border-bottom: 2px dashed rgba(42,34,48,.3); padding-bottom: 6px; margin-bottom: 8px">📱 Vivi</div>
+        <div class="sk-msg">the painting's gone. come to the museum?</div>
+        <div class="sk-msg sk-msg--me">on my way</div>
+        <div class="sk-msg">bring the notebook</div>
+      </div>
+    </div>
+    <div class="sk-row" style="margin-top: 34px; --gap: 30px">
+      <span class="sk-bubble">Morning, detective!</span>
+      <span class="sk-shout">hmm…</span>
+      <span class="sk-shout sk-shout--yell">HEY!</span>
+      <span class="sk-shout sk-shout--wail">nooo</span>
+      <span class="sk-prompt"><kbd class="sk-kbd">E</kbd> look at the frame</span>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Forms</h2><span class="sk-label">sk-field · sk-input · sk-textarea · sk-check · sk-tabs</span>
+    <div class="sk-grid" style="--min: 300px">
+      <div class="sk" style="padding: 18px 22px">
+        <div class="sk-stack" style="--gap: 14px">
+          <label class="sk-field"><span class="sk-field__label">Your name</span><input class="sk-input" placeholder="Detective…"></label>
+          <label class="sk-field"><span class="sk-field__label">Suspect</span><input class="sk-input sk-input--line" value="Rex, the van driver"></label>
+          <label class="sk-check"><input type="checkbox" checked> I'm sure</label>
+        </div>
+      </div>
+      <div>
+        <div class="sk-tabs" role="tablist"><button role="tab" aria-selected="true">Clues</button><button role="tab">People</button><button role="tab">Map</button></div>
+        <div class="sk" style="border-top: 0; border-radius: 0 0 14px 14px; padding: 16px 20px">
+          <label class="sk-field"><span class="sk-field__label">Notes</span><textarea class="sk-textarea">The frame was warm.
+Bakery opens at 7.</textarea></label>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Main Street</h2><span class="sk-label">sk-awning · sk-shop · sk-sign · sk-blade · sk-window · sk-bunting · data-shop</span>
+    <div class="sk-street-row">
+      <div class="sk-shop" data-shop="bakery">
+        <div class="sk-awning"></div>
+        <div class="sk-shop__body"><span class="sk-sign">Rise &amp; Shine</span><p style="margin: 10px 0 0">Bakery · since 1952</p></div>
+      </div>
+      <div class="sk-shop" data-shop="cafe">
+        <div class="sk-awning"></div>
+        <div class="sk-shop__body"><span class="sk-sign sk-sign--gilt">Bean There</span><p style="margin: 10px 0 0">Café · tables outside</p></div>
+      </div>
+      <div class="sk-shop" data-shop="icecream">
+        <div class="sk-awning"></div>
+        <div class="sk-shop__body"><span class="sk-sign">Two Scoops</span><p style="margin: 10px 0 0">Ice cream · 🍦</p></div>
+      </div>
+      <div class="sk-shop" data-shop="florist">
+        <div class="sk-awning"></div>
+        <div class="sk-shop__body"><span class="sk-sign">Petal &amp; Stem</span><p style="margin: 10px 0 0">Florist · 🌷</p></div>
+      </div>
+      <div class="sk-shop" data-shop="toys">
+        <div class="sk-awning"></div>
+        <div class="sk-shop__body"><span class="sk-sign">Tinker's Toys</span><p style="margin: 10px 0 0">Toys · 🎈</p></div>
+      </div>
+      <div class="sk-shop" data-shop="books">
+        <div class="sk-awning"></div>
+        <div class="sk-shop__body"><span class="sk-sign">Dog-Eared</span><p style="margin: 10px 0 0">Books · 📚</p></div>
+      </div>
+    </div>
+    <div class="sk-row" style="margin-top: 36px; --gap: 30px; align-items: flex-start">
+      <span class="sk-blade" data-shop="bakery">🥐</span>
+      <span class="sk-blade" data-shop="cafe">☕</span>
+      <span class="sk-blade" data-shop="grocer">🍎</span>
+      <div class="sk-window" style="flex: 1; min-width: 240px"><span class="sk-window__paint">Fresh bread daily</span></div>
+      <span class="sk-street">Main St</span>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Marquee, tickets, frames</h2><span class="sk-label">sk-marquee · sk-ticket · sk-frame · sk-plaque</span>
+    <div class="sk-row" style="--gap: 36px; align-items: center">
+      <div class="sk-marquee"><p>The Bijou<br><small style="font-size: .6em">tonight · 8pm</small></p></div>
+      <div class="sk-ticket">
+        <div class="sk-ticket__main"><b>Admit one</b><span class="sk-soft">Gallery · Hall B · row 4</span></div>
+        <div class="sk-ticket__stub">No. 042</div>
+      </div>
+      <figure style="margin: 0; text-align: center">
+        <div class="sk-frame"><div style="width: 160px; height: 110px; background: linear-gradient(160deg, #93ABC0, #A8B994 60%, #E1B95C)"></div></div>
+        <figcaption><span class="sk-plaque">“Harbour at Dawn” · missing</span></figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Loading &amp; moments</h2><span class="sk-label">sk-scribble · sk-toast · sk-modal · sk-caption</span>
+    <div class="sk-row" style="--gap: 34px">
+      <svg class="sk-scribble" width="160" height="90" viewBox="0 0 160 90" aria-label="Loading">
+        <path d="M14 60 C 30 20, 60 20, 70 50 S 110 80, 130 40"/>
+        <path d="M30 76 L 120 76"/>
+        <path d="M120 18 l 8 12 l 12 -3 l -6 11 l 8 9"/>
+      </svg>
+      <span class="sk-toast sk-toast--inline">Noted in your notebook ✎</span>
+      <button class="sk-btn sk-btn--gold" onclick="document.getElementById('m').showModal()">Open the case file</button>
+      <div style="background: var(--sk-night); padding: 18px 28px; border-radius: 6px"><span class="sk-caption">Three days earlier…</span></div>
+    </div>
+    <dialog class="sk-modal" id="m">
+      <button class="sk-btn sk-btn--sm sk-modal__x" onclick="this.closest('dialog').close()">close</button>
+      <h2>Case file</h2>
+      <p>The painting left the gallery between 6 and 7 a.m. Three people were on Main Street.</p>
+      <div class="sk-row"><button class="sk-btn sk-btn--gold">Otto</button><button class="sk-btn">Pia</button><button class="sk-btn">Rex</button></div>
+    </dialog>
+  </section>
+</div>
+<div class="sk-bunting" style="--b1: var(--sk-teal); --b2: var(--sk-rose); --b3: var(--sk-mustard)"></div>
+<script>
+  document.querySelectorAll('.sk-tabs > button').forEach(b => b.onclick = () => {
+    for (const s of b.parentElement.children) s.setAttribute('aria-selected', s === b);
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+  "name": "ghanemja-ui",
+  "version": "1.0.0",
+  "description": "Two ready-to-use UI styles for agents: Pop (neo-brutalist pop, from YarnFlow/pptgpt) and Sketch (hand-drawn storybook + Main Street kit, from The Vanishing Gallery).",
+  "author": {
+    "name": "ghanemja"
+  },
+  "repository": "https://github.com/ghanemja/ui",
+  "license": "MIT"
+}

@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pop UI · component gallery</title>
+<link rel="stylesheet" href="../skills/pop-ui/pop.css">
+<style>
+  .demo-sec { margin-top: 44px; }
+  .demo-sec > h2 { margin-bottom: 6px; }
+  .demo-sec > .pop-eyebrow { display: block; margin-bottom: 16px; }
+  .swatch { display: grid; gap: 6px; font-size: 13px; }
+  .swatch i { display: block; height: 64px; border-radius: 16px; border: 2px solid var(--pop-edge); background: var(--c); box-shadow: var(--pop-sh); }
+  .swatch code { background: none; border: 0; padding: 0; }
+</style>
+</head>
+<body class="pop">
+<div class="pop-wrap" style="padding: 20px 0 80px">
+
+  <nav class="pop-nav">
+    <a class="pop-nav__brand" href="#"><span class="pop-logo">🧶</span> Pop UI</a>
+    <a class="pop-nav__link" href="#" aria-current="page">Components</a>
+    <a class="pop-nav__link" href="sketch.html">Sketch UI →</a>
+    <button class="pop-btn pop-btn--sm" id="theme">◐ Dark</button>
+    <div class="pop-seg" role="group" aria-label="Accent">
+      <button class="is-on" data-acc="">Orange</button><button data-acc="cobalt">Cobalt</button><button data-acc="pink">Pink</button>
+    </div>
+  </nav>
+
+  <header class="pop-hero" style="margin-top: 24px; position: relative">
+    <span class="pop-eyebrow">Neo-brutalist pop · for YarnFlow, pptgpt &amp; friends</span>
+    <h1 class="pop-display" style="margin: 10px 0 14px">See it <mark>made</mark>,<br>stitch by stitch.</h1>
+    <p class="pop-lede">Ink outlines, hard offset shadows, one hot accent and a box of pastels. Everything is a plain CSS class: drop it in any HTML, React or Vue page.</p>
+    <div class="pop-row" style="margin-top: 18px">
+      <button class="pop-btn pop-btn--primary pop-btn--lg">Start a pattern</button>
+      <button class="pop-btn pop-btn--lg">Learn stitches</button>
+      <button class="pop-btn pop-btn--ghost">Watch the tour ▸</button>
+    </div>
+    <div class="pop-sticker" style="position: absolute; right: 28px; top: -18px; --tilt: 4deg"><small>New</small>Live hands ✋</div>
+  </header>
+
+  <section class="demo-sec">
+    <h2>Colour</h2><span class="pop-eyebrow">tokens · --pop-*</span>
+    <div class="pop-grid" style="--min: 120px; --gap: 16px">
+      <div class="swatch"><i style="--c: var(--pop-accent)"></i><code>accent</code></div>
+      <div class="swatch"><i style="--c: var(--pop-butter)"></i><code>butter</code></div>
+      <div class="swatch"><i style="--c: var(--pop-pink)"></i><code>pink</code></div>
+      <div class="swatch"><i style="--c: var(--pop-mint)"></i><code>mint</code></div>
+      <div class="swatch"><i style="--c: var(--pop-sky)"></i><code>sky</code></div>
+      <div class="swatch"><i style="--c: var(--pop-lilac)"></i><code>lilac</code></div>
+      <div class="swatch"><i style="--c: var(--pop-ink)"></i><code>ink</code></div>
+      <div class="swatch"><i style="--c: var(--pop-soft)"></i><code>soft</code></div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Buttons, chips, pills</h2><span class="pop-eyebrow">pop-btn · pop-chip · pop-pill · pop-tag · pop-badge · pop-kbd</span>
+    <div class="pop-stack">
+      <div class="pop-row">
+        <button class="pop-btn pop-btn--primary">Primary</button>
+        <button class="pop-btn">Default</button>
+        <button class="pop-btn pop-btn--ink">Ink</button>
+        <button class="pop-btn pop-btn--butter">Butter</button>
+        <button class="pop-btn pop-btn--ghost">Ghost</button>
+        <button class="pop-btn pop-btn--sm">Small</button>
+        <button class="pop-btn pop-btn--icon" aria-label="Play">▶</button>
+        <button class="pop-btn" disabled>Disabled</button>
+      </div>
+      <div class="pop-row">
+        <button class="pop-chip" aria-pressed="true">All</button>
+        <button class="pop-chip">Amigurumi</button>
+        <button class="pop-chip">Scarves</button>
+        <button class="pop-chip">Blankets <span class="pop-badge">12</span></button>
+      </div>
+      <div class="pop-row">
+        <span class="pop-pill" style="--st:#8EE0C3">sc ×6</span>
+        <span class="pop-pill" style="--st:#FFD86B">inc ×6</span>
+        <span class="pop-pill" style="--st:#FF9BB0">dec</span>
+        <span class="pop-pill" style="--st:#9CCBFF">hdc ×12</span>
+        <span class="pop-pill pop-pill--solid" style="--st:#C9B8FF">mr</span>
+        <span class="pop-tag">Beta</span>
+        <span>Press <kbd class="pop-kbd">⌘</kbd> <kbd class="pop-kbd">K</kbd></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Cards &amp; tiles</h2><span class="pop-eyebrow">pop-card · pop-tile · pop-well · pop-fill-*</span>
+    <div class="pop-grid">
+      <article class="pop-card pop-card--hover">
+        <span class="pop-tag">Pattern</span>
+        <h3 style="margin: 12px 0 6px">Tiny teddy</h3>
+        <p class="pop-muted">14 rounds · 2 parts · beginner</p>
+        <div class="pop-row" style="--gap: 6px"><span class="pop-pill">mr</span><span class="pop-pill" style="--st:#FFD86B">inc</span><span class="pop-pill" style="--st:#FF9BB0">dec</span></div>
+      </article>
+      <article class="pop-card pop-fill-butter">
+        <span class="pop-eyebrow" style="color: inherit">Deck score</span>
+        <div class="pop-display" style="font-size: 64px; margin: 6px 0">86</div>
+        <p style="margin: 0">Your story lands. Two slides still say the same thing.</p>
+      </article>
+      <article class="pop-card pop-fill-mint">
+        <h3>Coach: friendly editor</h3>
+        <p style="margin: 8px 0 14px">“Lead with the number. The chart can follow.”</p>
+        <button class="pop-btn pop-btn--sm">Apply note</button>
+      </article>
+    </div>
+    <div class="pop-grid" style="margin-top: 20px; --min: 200px">
+      <div class="pop-tile"><b>Tile</b><p class="pop-muted" style="margin:0">Smaller radius, small shadow.</p></div>
+      <div class="pop-tile pop-fill-sky"><b>Sky tile</b><p style="margin:0">Pastel fills on anything.</p></div>
+      <div class="pop-well"><b>Well</b><p class="pop-muted" style="margin:0">Inset, no shadow.</p></div>
+      <div class="pop-tile pop-fill-ink"><b>Ink tile</b><p style="margin:0; opacity: .8">For the one loud thing.</p></div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Forms</h2><span class="pop-eyebrow">pop-field · pop-input · pop-select · pop-textarea · pop-check · pop-switch · pop-slider</span>
+    <div class="pop-card" style="display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr))">
+      <label class="pop-field"><span class="pop-label">Pattern name</span><input class="pop-input" placeholder="Granny square coaster"><span class="pop-hint">Shown on the share card.</span></label>
+      <label class="pop-field"><span class="pop-label">Terms</span><select class="pop-select"><option>US terms</option><option>UK terms</option></select></label>
+      <label class="pop-field" style="grid-column: 1 / -1"><span class="pop-label">Paste the pattern</span><textarea class="pop-textarea pop-textarea--mono">Rnd 1: 6 sc in mr (6)
+Rnd 2: inc x6 (12)
+Rnd 3: (sc, inc) x6 (18)</textarea></label>
+      <div class="pop-stack" style="--gap: 10px">
+        <label class="pop-check"><input type="checkbox" checked> Show stitch counts</label>
+        <label class="pop-check"><input type="checkbox"> Left-handed</label>
+        <label class="pop-check"><input type="radio" name="r" checked> Rows</label>
+        <label class="pop-check"><input type="radio" name="r"> Rounds</label>
+      </div>
+      <div class="pop-stack" style="--gap: 14px">
+        <label class="pop-switch"><input type="checkbox" checked> Live hands</label>
+        <label class="pop-switch"><input type="checkbox"> Slow motion</label>
+        <label class="pop-field"><span class="pop-label">Speed</span><input type="range" class="pop-slider" value="60"></label>
+      </div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Navigation</h2><span class="pop-eyebrow">pop-tabs · pop-seg · pop-steps</span>
+    <div class="pop-stack">
+      <div class="pop-tabs" role="tablist"><button class="pop-tab" role="tab" aria-selected="true">3D piece</button><button class="pop-tab" role="tab">Live hands</button><button class="pop-tab" role="tab">Tutorial</button><button class="pop-tab" role="tab">Chart</button></div>
+      <div class="pop-row"><div class="pop-seg"><button aria-pressed="true">Edit</button><button>Preview</button><button>Present</button></div></div>
+      <ol class="pop-steps"><li class="is-done">Upload</li><li class="is-done">Storyboard</li><li class="is-on">Draft slides</li><li>Coach</li><li>Export</li></ol>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Lists &amp; tables</h2><span class="pop-eyebrow">pop-list · pop-table</span>
+    <div class="pop-grid" style="--min: 320px">
+      <ul class="pop-list">
+        <li><span class="pop-pill">R1</span> 6 sc in magic ring <span class="pop-muted" style="margin-left:auto">(6)</span></li>
+        <li class="is-here"><span class="pop-pill" style="--st:#FFD86B">R2</span> inc ×6 <span class="pop-muted" style="margin-left:auto">(12)</span></li>
+        <li class="is-click"><span class="pop-pill" style="--st:#FF9BB0">R3</span> (sc, inc) ×6 <span class="pop-muted" style="margin-left:auto">(18)</span></li>
+      </ul>
+      <table class="pop-table">
+        <thead><tr><th>Slide</th><th>Coach</th><th class="num">Score</th></tr></thead>
+        <tbody><tr><td>Title</td><td><span class="pop-dot" style="--st:#8EE0C3"></span> Clear</td><td class="num">92</td></tr>
+        <tr><td>Market</td><td><span class="pop-dot" style="--st:#FFD86B"></span> Busy</td><td class="num">71</td></tr>
+        <tr><td>Ask</td><td><span class="pop-dot" style="--st:#FF9BB0"></span> Buried</td><td class="num">54</td></tr></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Feedback</h2><span class="pop-eyebrow">pop-alert · pop-progress · pop-toast · pop-empty · pop-skeleton</span>
+    <div class="pop-grid" style="--min: 300px">
+      <div class="pop-stack">
+        <div class="pop-alert pop-alert--good"><span class="pop-alert__icon">✓</span><div><strong>Counts check out</strong>Every round matches the one below.</div></div>
+        <div class="pop-alert pop-alert--warn"><span class="pop-alert__icon">!</span><div><strong>Rnd 7 looks off</strong>Works into 18 stitches but the row below has 12.</div></div>
+        <div class="pop-alert pop-alert--bad"><span class="pop-alert__icon">✕</span><div><strong>Couldn't read that PDF</strong>Try a photo of the page instead.</div></div>
+      </div>
+      <div class="pop-stack">
+        <div class="pop-progress" style="--p: 62%" role="progressbar" aria-valuenow="62"></div>
+        <div class="pop-progress pop-progress--stripes" style="--p: 35%"></div>
+        <div><span class="pop-toast pop-toast--inline">Saved to your library ✓</span></div>
+        <div class="pop-stack" style="--gap: 8px"><div class="pop-skeleton" style="width: 70%"></div><div class="pop-skeleton"></div><div class="pop-skeleton" style="width: 45%"></div></div>
+      </div>
+      <div class="pop-empty"><div class="pop-empty__art">🧶</div><h3>No patterns yet</h3><p class="pop-muted">Paste one, drop a PDF, or snap a photo.</p><button class="pop-btn pop-btn--primary">Add a pattern</button></div>
+    </div>
+  </section>
+
+  <section class="demo-sec">
+    <h2>Overlays &amp; people</h2><span class="pop-eyebrow">pop-modal · pop-tip · pop-avatar</span>
+    <div class="pop-row">
+      <button class="pop-btn pop-btn--ink" onclick="document.getElementById('m').showModal()">Open modal</button>
+      <button class="pop-btn pop-tip" data-tip="Copies a share link">Hover me</button>
+      <div class="pop-avatars"><span class="pop-avatar">JG</span><span class="pop-avatar" style="--st:#FF9BB0">AL</span><span class="pop-avatar" style="--st:#8EE0C3">MK</span><span class="pop-avatar" style="--st:#FFD86B">+4</span></div>
+    </div>
+    <dialog class="pop-modal" id="m">
+      <div class="pop-modal__head"><h3>Export deck</h3><button class="pop-btn pop-btn--icon pop-btn--sm" onclick="this.closest('dialog').close()" aria-label="Close">✕</button></div>
+      <div class="pop-modal__body"><p>Choose a format. Speaker notes come along either way.</p><div class="pop-seg"><button aria-pressed="true">.pptx</button><button>PDF</button><button>Images</button></div></div>
+      <div class="pop-modal__foot"><button class="pop-btn" onclick="this.closest('dialog').close()">Cancel</button><button class="pop-btn pop-btn--primary">Export</button></div>
+    </dialog>
+  </section>
+</div>
+<script>
+  document.getElementById('theme').onclick = () => {
+    const d = document.documentElement; d.dataset.theme = d.dataset.theme === 'dark' ? '' : 'dark';
+  };
+  document.querySelectorAll('[data-acc]').forEach(b => b.onclick = () => {
+    document.documentElement.dataset.popAccent = b.dataset.acc;
+    b.parentElement.querySelectorAll('button').forEach(x => x.classList.toggle('is-on', x === b));
+  });
+  // single-select groups: tabs, segmented controls, filter chips
+  const pick = (sel, attr) => document.querySelectorAll(sel).forEach(b => b.addEventListener('click', () => {
+    for (const s of b.parentElement.querySelectorAll(sel.split(' ').pop())) s.setAttribute(attr, s === b);
+  }));
+  pick('.pop-tab', 'aria-selected');
+  pick('.pop-seg:not([aria-label]) > button', 'aria-pressed');
+  pick('.pop-chip', 'aria-pressed');
+</script>
+</body>
+</html>

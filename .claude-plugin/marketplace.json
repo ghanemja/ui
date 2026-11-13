@@ -1,0 +1,11 @@
+{
+  "name": "ghanemja-ui",
+  "owner": { "name": "ghanemja" },
+  "plugins": [
+    {
+      "name": "ghanemja-ui",
+      "source": "./",
+      "description": "Pop UI and Sketch UI: CSS component libraries plus skills that teach agents to build in each style."
+    }
+  ]
+}
